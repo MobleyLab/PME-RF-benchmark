@@ -9,12 +9,22 @@ To install these packages, follow these steps:
 
 2. Create a conda environment and activate it:
 ```
-conda create -n pmxworkflow -c conda-forge -c omnia  python=3.7 openforcefield numpy pandas future pint
+conda create -n pmxworkflow -c conda-forge
 
 conda activate pmxworkflow
 ```
 
-3. Install each package:
+3. Install dependencies:
+
+```
+conda install -c conda-forge openforcefield
+
+conda install -c omnia future
+
+conda install -c omnia pint
+```
+
+4. Install each package:
 
 ```
 cd PLBenchmarks
